@@ -1,7 +1,7 @@
 
 body{ background-color: lightblue; margin:0px;}
 .header{}
-	h2{  background-color:#578798; text-align:center; margin:0px; color:neon; font-size: 20px; padding:40px;}
+	h2{  background-color:#578798; text-align:center; margin:0px; font-size: 20px; padding:40px;}
 ul {
   list-style-type: none;
   margin: 0;
