@@ -40,12 +40,69 @@ section{ background-color:lightblue; margin:20px;   padding-top: 100px;}
   
 }
 
-}
  section cl {margin:5px; padding:20%;}
  section cl bi {list-style:none; float:left; margin:2%;  padding:1%; background-color: white; width: 250px;
     height: 120px; text-align:center;}
  section cl bi a{text-decoration: none; display: block; width:100%;}
  section cl bi:hover {background:#111;}
 
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  resize: vertical;
 }
+.subject{height:100px;}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button[type=submit] {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  margin-top:10px;
+  padding:10px;
+}
+
+button[type=submit]:hover {
+  background-color:blue;
+}
+
+.container {
+ 
+  background-color: #6a7f91;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.footer{ text-align:center;
+margin:0px; padding:4px;
+background-color:black; color:white;}
+
+h5 {padding-right:10px; margin:5px; color:white;}
+h1 {padding-right:10px; margin:15px;    text-align: center;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
