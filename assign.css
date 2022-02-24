@@ -9,7 +9,19 @@ ul {
   overflow: hidden;
   background-color: #0a5eb1;
 }
+.grid-container{
+display:grid;
+grid-template-columns:auto auto auto auto auto auto  ;
+background-color:lightblue;}
 
+.grid-container > div{
+background-color:#578798; 
+ }
+.item1{grid-column:1 /7; text-align:center; padding:20px;  font-size: 20px; padding:40px;}
+.item2{grid-column: 1 / 7;text-align:center; margin:0px; padding:0px;}
+.item3{ grid-column-start: 1;
+  grid-column-end: 7;  padding :10px; height :550px; 
+  } 
 li {
   float: left;
 }
@@ -27,25 +39,26 @@ li a:hover {
 }
 
 
-section{ background-color:lightblue; margin:20px;   padding-top: 100px;}
+section{ }
 .rightcolumn{float: left;
-  width: 45%; margin-left:70px;}
+  width: 37%;  margin-left:70px;}
 .leftcolumn {   
    float: left;
-  width: 35%;
+  width: 46%;
   height:300px;
-  padding:18px;
-  margin:12px;
+  margin-top:30px;
+
+ padding:10px;
   background-color: #f1f1f1;
   
 }
 
- section cl {margin:5px; padding:20%;}
- section cl bi {list-style:none; float:left; margin:2%;  padding:1%; background-color: white; width: 250px;
-    height: 120px; text-align:center;}
+ .section cl {}
+ section cl bi {list-style:none; float:left;  margin:10px; background-color: white;  width:84%;
+    height: 152px; text-align:center; padding:15px;}
  section cl bi a{text-decoration: none; display: block; width:100%;}
  section cl bi:hover {background:#111;}
-
+ h3{text-align:center;}
 
 
 input[type=text], select, textarea {
