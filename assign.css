@@ -22,6 +22,7 @@ background-color:#578798;
 .item3{ grid-column-start: 1;
   grid-column-end: 7;  padding :10px; height :550px; 
   } 
+  .item4{grid-column: 1 / 7;  padding:20px;}
 li {
   float: left;
 }
@@ -89,9 +90,10 @@ button[type=submit]:hover {
 }
 
 .container {
- 
-  background-color: #6a7f91;
-  padding: 20px;
+      padding-left: 46px;
+    width: 55%;
+    }
+.action{    width: 1000px;
 }
 
 .col-25 {
@@ -106,8 +108,10 @@ button[type=submit]:hover {
   margin-top: 6px;
 }
 .footer{ text-align:center;
-margin:0px; padding:4px;
+ padding:2px;
 background-color:black; color:white;}
+h5{ margin:4px; font-size:17px;}
+
 
 h5 {padding-right:10px; margin:5px; color:white;}
 h1 {padding-right:10px; margin:15px;    text-align: center;}
