@@ -1,7 +1,15 @@
 body{ background-color: lightblue; margin:0px;}
-.header{}
+
 	h2{  background-color:#578798; text-align:center; margin:0px;  font-size: 20px; padding:40px;}
 	h3{text-align:center; font-size:20px; margin:15px;color:#7b13d5; margin-bottom:60px; }
+	/* Styling the grid  */
+	.grid-container{
+display:grid;
+grid-template-columns:auto auto auto auto auto auto  ;
+background-color:lightblue;}
+.grid-container > div{
+background-color:#578798; }
+	/* Styling the navigation bar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -9,38 +17,35 @@ ul {
   overflow: hidden;
   background-color: #0a5eb1;
 }
-.grid-container{
-display:grid;
-grid-template-columns:auto auto auto auto auto auto  ;
-background-color:lightblue;}
-
-.grid-container > div{
-background-color:#578798; 
- }
-.item1{grid-column:1 /7; text-align:center; padding:20px;  font-size: 20px; padding:40px;}
-.item2{grid-column: 1 / 7;text-align:center; margin:0px; padding:0px;}
-.item3{ grid-column-start: 1;
-  grid-column-end: 7;  padding :10px; height :550px; 
-  } 
-  .item4{grid-column: 1 / 7;  padding:20px;}
 li {
-  float: left;
-}
-
-li a {
+float: left;}
+/* Styling the navigation links */
+  li a {
   display: block;
   color: white;
   text-align: none;
   padding: 19px 40px;
   text-decoration:none;
 }
-
-li a:hover {
+/* change color of navigation hover */
+ li a:hover {
   background-color: #111;
 }
-
+.item1{grid-column:1 /7; text-align:center; padding:20px;  font-size: 20px; padding:40px;}
+.item2{grid-column: 1 / 7;text-align:center; margin:0px; padding:0px;}
+.item3{ grid-column-start: 1;
+  grid-column-end: 7;  padding :10px; height :550px; 
+  } 
+  .item4{grid-column: 1 / 7;  padding:20px;}
+  .item5{ grid-column-start: 1;
+  grid-column-end: 3; text-align:center; margin:53px; padding:10px;}
+  .item6{  grid-column-start: 3;
+  grid-column-end: 4; text-align:center;margin-right:78px; padding:10px; margin-top:52px; margin-bottom: 54px;}
+.item7{ grid-column-start: 1;
+  grid-column-end: 3;text-align:center;margin:44px; padding:10px;}
 
 section{ }
+/* Create two unequal columns that floats next to each other */
 .rightcolumn{float: left;
   width: 37%;  margin-left:70px;}
 .leftcolumn {   
@@ -53,7 +58,7 @@ section{ }
   background-color: #f1f1f1;
   
 }
-
+/* Styling the section links */
  .section cl {}
  section cl bi {list-style:none; float:left;  margin:10px; background-color: white;  width:84%;
     height: 152px; text-align:center; padding:15px;}
@@ -61,7 +66,33 @@ section{ }
  section cl bi:hover {background:#111;}
  h3{text-align:center;}
 
+/* Styling the contact form */
+.container {
+      padding-left: 46px;
+    width: 55%;
+    }
+.action{    width: 1000px;
+}
 
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+margin-top: 6px;}
+  
+  /* Footer */
+.footer{ text-align:center;
+ padding:2px;
+background-color:black; color:white;}
+
+h5{ margin:4px; font-size:17px;}
+h5 {padding-right:10px; margin:5px; color:white;}
+h1 {padding-right:10px; margin:15px;    text-align: center;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -84,42 +115,29 @@ button[type=submit] {
   margin-top:10px;
   padding:10px;
 }
-
+/* change color of  hover */
 button[type=submit]:hover {
   background-color:blue;
 }
 
-.container {
-      padding-left: 46px;
-    width: 55%;
-    }
-.action{    width: 1000px;
-}
-
-.col-25 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-.footer{ text-align:center;
- padding:2px;
-background-color:black; color:white;}
-h5{ margin:4px; font-size:17px;}
-
-
-h5 {padding-right:10px; margin:5px; color:white;}
-h1 {padding-right:10px; margin:15px;    text-align: center;}
-
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width:800px) {
+   .leftcolumn, .rightcolumn {   
+    width: 100%;
+  }
+ }
+  @media screen and (max-width:800px) {
+   .item5  {grid-column: 1/7;}
+	.item7  {   
+    grid-column: 1/7;}
+	 .item6  {   
+    grid-column: 1/7; margin-left: 50px;}
+	
+  }
