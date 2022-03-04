@@ -1,15 +1,15 @@
 body{ background-color: lightblue; margin:0px;}
 
-	h2{  background-color:#578798; text-align:center; margin:0px;  font-size: 20px; padding:40px;}
-	h3{text-align:center; font-size:20px; margin:15px;color:#7b13d5; margin-bottom:60px; }
 	/* Styling the grid  */
 	.grid-container{
 display:grid;
 grid-template-columns:auto auto auto auto auto auto  ;
 background-color:lightblue;}
+
 .grid-container > div{
-background-color:#578798; }
-	/* Styling the navigation bar */
+background-color:#22a1ce; }
+
+	/* Styling the navigation bar */ /*css 2022*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -17,24 +17,23 @@ ul {
   overflow: hidden;
   background-color: #0a5eb1;
 }
-li {
-float: left;}
+
 /* Styling the navigation links */
   li a {
   display: block;
   color: white;
-  text-align: none;
   padding: 19px 40px;
   text-decoration:none;
+  float:left;
 }
 /* change color of navigation hover */
  li a:hover {
   background-color: #111;
 }
-.item1{grid-column:1 /7; text-align:center; padding:20px;  font-size: 20px; padding:40px;}
-.item2{grid-column: 1 / 7;text-align:center; margin:0px; padding:0px;}
+.item1{grid-column:1 /7; text-align:center; padding:15px;  font-size: 15px;}
+.item2{grid-column: 1 / 7;}
 .item3{ grid-column-start: 1;
-  grid-column-end: 7;  padding :10px; height :550px; 
+  grid-column-end: 7;  padding :10px; height :550px;      padding-top: 73px;
   } 
   .item4{grid-column: 1 / 7;  padding:20px;}
   .item5{ grid-column-start: 1;
@@ -43,6 +42,19 @@ float: left;}
   grid-column-end: 4; text-align:center;margin-right:78px; padding:10px; margin-top:52px; margin-bottom: 54px;}
 .item7{ grid-column-start: 1;
   grid-column-end: 3;text-align:center;margin:44px; padding:10px;}
+  .item8{padding-left: 149px;
+    padding-right: 284px;
+    padding-top: 44px;height: 800px;
+}
+/* adding the changes made during the progress in item 8 */
+.pic1 img{ width:500px; height:278px;}
+.pic2 img {width: 500px; margin-bottom:38px; height:278px;}
+.pic1{
+	float:left;
+	width:60%;}
+.pic2{ float:left; width:40%; }
+
+
 
 section{ }
 /* Create two unequal columns that floats next to each other */
@@ -50,28 +62,37 @@ section{ }
   width: 37%;  margin-left:70px;}
 .leftcolumn {   
    float: left;
-  width: 46%;
+  width: 35%;
   height:300px;
-  margin-top:30px;
+  margin-top:20px;
 
- padding:10px;
-  background-color: #f1f1f1;
-  
+ padding:17px;
+  background-color: #92e236;
+  margin-left: 38px;
 }
-/* Styling the section links */
+/* Styling the section links */ /*css 2022*/
  .section cl {}
- section cl bi {list-style:none; float:left;  margin:10px; background-color: white;  width:84%;
-    height: 152px; text-align:center; padding:15px;}
- section cl bi a{text-decoration: none; display: block; width:100%;}
+ section cl bi { float:left;  margin:10px; background-color: white;  width:80%;
+    height: 170px; text-align:center; padding:15px;}
+ section cl bi a{text-decoration: none; }
  section cl bi:hover {background:#111;}
  h3{text-align:center;}
-
 /* Styling the contact form */
 .container {
       padding-left: 46px;
     width: 55%;
     }
-.action{    width: 1000px;
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 .col-25 {
@@ -84,28 +105,8 @@ section{ }
   float: left;
   width: 75%;
 margin-top: 6px;}
-  
-  /* Footer */
-.footer{ text-align:center;
- padding:2px;
-background-color:black; color:white;}
 
-h5{ margin:4px; font-size:17px;}
-h5 {padding-right:10px; margin:5px; color:white;}
-h1 {padding-right:10px; margin:15px;    text-align: center;}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid whitesmoke;
-  border-radius: 4px;
-  resize: vertical;
-}
 .subject{height:100px;}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
 
 button[type=submit] {
   background-color: white;
@@ -113,8 +114,8 @@ button[type=submit] {
   border: none;
   border-radius: 4px;
   margin-top:10px;
-  padding:10px;
-}
+padding:10px;}
+
 /* change color of  hover */
 button[type=submit]:hover {
   background-color:blue;
@@ -124,20 +125,41 @@ button[type=submit]:hover {
 .row:after {
   content: "";
   display: table;
-  clear: both;
-}
+clear: both;}
+  
+  /* Footer */
+.footer{ text-align:center;
+ padding:2px;
+background-color:black; color:white;}
+
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width:800px) {
-   .leftcolumn, .rightcolumn {   
-    width: 100%;
-  }
- }
-  @media screen and (max-width:800px) {
-   .item5  {grid-column: 1/7;}
+	 .item3 {   padding: 70px;
+	 height: 704px;}
+   .leftcolumn { width: 100%; padding-left:10px; margin:0px;}
+   .rightcolumn {  margin:0px ;
+   width: 100%;}
+	.item5  {grid-column: 1/7;}
 	.item7  {   
     grid-column: 1/7;}
 	 .item6  {   
-    grid-column: 1/7; margin-left: 50px;}
-	
-  }
+ grid-column: 1/7; margin-left: 50px;}
+ .col-25 {width:100%;}
+ .col-75{width:100%;}
+ .container {width:80%;}
+ }
+ 
+
+	@media screen and (max-width:1300px){ .pic2{ width:100%; float:none; padding-left:88px;}
+	.pic1{float:none; padding-left:88px;}
+	    .item8 {padding-left: 146px;
+		padding-right: 86px; height:1000px;}
+		.item2 li a {
+    float: none;
+	display:block; text-align:center; }
+ }
+ 
+ 
+ 

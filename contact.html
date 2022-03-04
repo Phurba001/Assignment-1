@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang= "en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title> contacts </title>
-<link rel="stylesheet" type="text/css "href="assign.css">
+<link rel="stylesheet" type="text/css" href="assign.css">
 </head>
 <body>
 <div class="grid-container"> 
-<div class="item1">Contact </div>
+<div class="item1"> <h1>Contact </h1> </div>
 <div class="item2">
 <ul>
   <li><a href="file:///C:/Users/user/Documents/Assignment-1/index.html">Home</a></li>
   <li><a href="file:///C:/Users/user/Documents/Assignment-1/portfolio.html">Portfolio</a></li>
   <li><a href="file:///C:/Users/user/Documents/Assignment-1/contact.html">Contact us</a></li>
   <li><a href="file:///C:/Users/user/Documents/Assignment-1/blog.html">blog</a></li>
-  <li><a href="sitereport">Site report</a></li>
+  <li><a href="file:///C:/Users/user/Documents/Assignment-1/Report.html">Site report</a></li>
 </ul> </div>
 <div class="item4">
 <div class="container">
-  <form action="/action_page.php">
+  <form>
   <div class="row">
     <div class="col-25">
-      <label for="firstname">First Name</label>
+      <label> Name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lastname">Last Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+      <input type="text"  name="yourname" placeholder="Your name..">
     </div>
   </div>
   <div class="row">
@@ -48,14 +41,14 @@
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">Subject</label>
+      <label>Subject</label>
     </div>
     <div class="col-75">
       <textarea class="subject" name="subject" placeholder="Write something.." ></textarea>
     </div>
   </div>
   <div class="row">
-<button type="submit">Submit</button>
+<button type="submit" onclick ="alert('form submitted!')" value ="submit"> submit </button>
   </div>
   </form>
 </div> </div>
@@ -68,6 +61,3 @@
 </footer>
 </body>
 </html>
-
-
-
