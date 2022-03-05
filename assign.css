@@ -10,7 +10,7 @@ background-color:lightblue;}
 background-color:#22a1ce; }
 
 	/* Styling the navigation bar */ /*css 2022*/
-ul {
+.item2 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ ul {
 }
 
 /* Styling the navigation links */
-  li a {
+  .item2 li a {
   display: block;
   color: white;
   padding: 19px 40px;
@@ -27,7 +27,7 @@ ul {
   float:left;
 }
 /* change color of navigation hover */
- li a:hover {
+ .item2 li a:hover {
   background-color: #111;
 }
 .item1{grid-column:1 /7; text-align:center; padding:15px;  font-size: 15px;}
@@ -44,7 +44,7 @@ ul {
   grid-column-end: 3;text-align:center;margin:44px; padding:10px;}
   .item8{padding-left: 149px;
     padding-right: 284px;
-    padding-top: 44px;height: 800px;
+    padding-top: 44px;height: 1350px;
 }
 /* adding the changes made during the progress in item 8 */
 .pic1 img{ width:500px; height:278px;}
@@ -53,6 +53,9 @@ ul {
 	float:left;
 	width:60%;}
 .pic2{ float:left; width:40%; }
+.pic3{float:left;}
+.pic3 img{width:30%; padding-bottom:20px; padding-inline:10px;}
+
 
 
 
@@ -71,11 +74,11 @@ section{ }
   margin-left: 38px;
 }
 /* Styling the section links */ /*css 2022*/
- .section cl {}
- section cl bi { float:left;  margin:10px; background-color: white;  width:80%;
+ section ul {list-style-type: none;}
+ section ul li { float:left;  margin:10px; background-color: white;  width:80%;
     height: 170px; text-align:center; padding:15px;}
- section cl bi a{text-decoration: none; }
- section cl bi:hover {background:#111;}
+ section ul li a{text-decoration: none; }
+ section ul li:hover {background:#111;}
  h3{text-align:center;}
 /* Styling the contact form */
 .container {
@@ -135,7 +138,7 @@ background-color:black; color:white;}
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width:800px) {
+ @media screen and (max-width:768px) {
 	 .item3 {   padding: 70px;
 	 height: 704px;}
    .leftcolumn { width: 100%; padding-left:10px; margin:0px;}
@@ -149,16 +152,24 @@ background-color:black; color:white;}
  .col-25 {width:100%;}
  .col-75{width:100%;}
  .container {width:80%;}
- }
- 
-
-	@media screen and (max-width:1300px){ .pic2{ width:100%; float:none; padding-left:88px;}
-	.pic1{float:none; padding-left:88px;}
-	    .item8 {padding-left: 146px;
-		padding-right: 86px; height:1000px;}
-		.item2 li a {
+ .item2 li a {
     float: none;
 	display:block; text-align:center; }
+	.pic3 img{ width:100%}
+	.item8 {height:4000px; padding-left: 146px;
+		padding-right: 86px}
+		.pic2{ width:100%; float:none; padding-left:88px;}
+	.pic1{float:none; padding-left:88px;}
+ }
+ 
+ 
+
+	@media screen and (max-width:1300px) and (min-width:768px){
+	.pic2{ width:100%; float:none; padding-left:88px;}
+	.pic1{float:none; padding-left:88px;}
+	    .item8 {padding-left: 146px;
+		padding-right: 86px; height:1800px;}
+	
  }
  
  
