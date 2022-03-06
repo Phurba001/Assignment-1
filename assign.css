@@ -1,6 +1,6 @@
 body{ background-color: lightblue; margin:0px;}
 
-	/* Styling the grid  */
+	/* Styling the grid  */ /*css 2022*/
 	.grid-container{
 display:grid;
 grid-template-columns:auto auto auto auto auto auto  ;
@@ -30,6 +30,7 @@ background-color:#22a1ce; }
  .item2 li a:hover {
   background-color: #111;
 }
+/*css 2022*/
 .item1{grid-column:1 /7; text-align:center; padding:15px;  font-size: 15px;}
 .item2{grid-column: 1 / 7;}
 .item3{ grid-column-start: 1;
@@ -44,7 +45,7 @@ background-color:#22a1ce; }
   grid-column-end: 3;text-align:center;margin:44px; padding:10px;}
   .item8{padding-left: 149px;
     padding-right: 284px;
-    padding-top: 44px;height: 1350px;
+    padding-top: 44px;height: 1400px;
 }
 /* adding the changes made during the progress in item 8 */
 .pic1 img{ width:500px; height:278px;}
